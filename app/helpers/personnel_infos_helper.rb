@@ -1,0 +1,2 @@
+module PersonnelInfosHelper
+end

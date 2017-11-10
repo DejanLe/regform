@@ -1,0 +1,77 @@
+<%= form_for([@client, @client.requests.build]) do |form| %>
+ 
+
+  <div class="field">
+    <%= form.label :date_of_request %>
+    <%= form.text_field :date_of_request, id: :request_date_of_request %>
+  </div>
+
+  <div class="field">
+    <%= form.label :new_account %>
+    <%= form.check_box :new_account, id: :request_new_account %>
+  </div>
+
+  <div class="field">
+    <%= form.label :change_privileges %>
+    <%= form.check_box :change_privileges, id: :request_change_privileges %>
+  </div>
+
+  <div class="field">
+    <%= form.label :change_privileges %>
+    <%= form.check_box :change_privileges, id: :request_change_privileges %>
+  </div>
+
+  <div class="field">
+    <%= form.label :disable_account %>
+    <%= form.check_box :disable_account, id: :request_disable_account %>
+  </div>
+
+  <div class="field">
+    <%= form.label :re_enable_account %>
+    <%= form.check_box :re_enable_account, id: :request_re_enable_account %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mc %>
+    <%= form.check_box :mc, id: :request_mc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hmfp %>
+    <%= form.check_box :hmfp, id: :request_hmfp %>
+  </div>
+
+  <div class="field">
+    <%= form.label :apg %>
+    <%= form.check_box :apg, id: :request_apg %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ap_hmfp %>
+    <%= form.check_box :ap_hmfp, id: :request_ap_hmfp %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mc_corporate %>
+    <%= form.check_box :mc_corporate, id: :request_mc_corporate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :other %>
+    <%= form.check_box :other, id: :request_other %>
+  </div>
+
+  <div class="field">
+    <%= form.label :specify %>
+    <%= form.text_area :specify, id: :request_specify %>
+  </div>
+
+  <div class="field">
+    <%= form.label :client_id %>
+    <%= form.text_field :client_id, id: :request_client_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date_of_request: MyString
+  new_account: false
+  change_privileges: false
+  change_privileges: false
+  disable_account: false
+  re_enable_account: false
+  mc: false
+  hmfp: false
+  apg: false
+  ap_hmfp: false
+  mc_corporate: false
+  other: false
+  specify: MyText
+  client: one
+
+two:
+  date_of_request: MyString
+  new_account: false
+  change_privileges: false
+  change_privileges: false
+  disable_account: false
+  re_enable_account: false
+  mc: false
+  hmfp: false
+  apg: false
+  ap_hmfp: false
+  mc_corporate: false
+  other: false
+  specify: MyText
+  client: two
