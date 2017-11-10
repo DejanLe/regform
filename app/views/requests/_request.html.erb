@@ -1,71 +1,48 @@
- 
-<p>
-  <strong>Date of request:</strong>
-  <%=  request.date_of_request %>
-</p>
+  <% if user_signed_in? %>
+<div class="new_requestor">
+  
+    
+          <div class=" ">
+<table class="table   table-hover table-responsive">
+  <thead>
+    <tr>
+      <th>Your name</th>
+      <th>Date of request</th>
+      <th>New account</th>
+      <th>Change privileges</th>
+      <th>Change privileges</th>
+      <th>Disable account</th>
+      <th>Re enable account</th>
+      <th>Mc</th>
+      <th>Hmfp</th>
+      <th>Apg</th>
+      <th>Ap hmfp</th>
+      <th>Mc corporate</th>
+      <th>Other</th>
+      <th>Specify</th> 
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+   <tbody>
+      <tr>
+        <td><%= request.client.name %></td>
+        <td><%= request.date_of_request %></td>
+        <td><%= request.new_account %></td>
+        <td><%= request.change_privileges %></td>
+        <td><%= request.change_privileges %></td>
+        <td><%= request.disable_account %></td>
+        <td><%= request.re_enable_account %></td>
+        <td><%= request.mc %></td>
+        <td><%= request.hmfp %></td>
+        <td><%= request.apg %></td>
+        <td><%= request.ap_hmfp %></td>
+        <td><%= request.mc_corporate %></td>
+        <td><%= request.other %></td>
+        <td><%= request.specify %></td>
+        
+         
+      </tr>
 
-<p>
-  <strong>New account:</strong>
-  <%=  request.new_account %>
-</p>
 
-<p>
-  <strong>Change privileges:</strong>
-  <%=  request.change_privileges %>
-</p>
-
-<p>
-  <strong>Change privileges:</strong>
-  <%= request.change_privileges %>
-</p>
-
-<p>
-  <strong>Disable account:</strong>
-  <%= request.disable_account %>
-</p>
-
-<p>
-  <strong>Re enable account:</strong>
-  <%=  request.re_enable_account %>
-</p>
-
-<p>
-  <strong>Mc:</strong>
-  <%=  request.mc %>
-</p>
-
-<p>
-  <strong>Hmfp:</strong>
-  <%=  request.hmfp %>
-</p>
-
-<p>
-  <strong>Apg:</strong>
-  <%=  request.apg %>
-</p>
-
-<p>
-  <strong>Ap hmfp:</strong>
-  <%=  request.ap_hmfp %>
-</p>
-
-<p>
-  <strong>Mc corporate:</strong>
-  <%=  request.mc_corporate %>
-</p>
-
-<p>
-  <strong>Other:</strong>
-  <%=  request.other %>
-</p>
-
-<p>
-  <strong>Specify:</strong>
-  <%=  request.specify %>
-</p>
-
-<p>
-  <strong>Client:</strong>
-  <%=  request.client.name %>
-</p>
- 
+   </tbody>
+            <% end %>    

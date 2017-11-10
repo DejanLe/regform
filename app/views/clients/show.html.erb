@@ -1,23 +1,35 @@
- <div class="client_show_page">
- 	<div class="container">
- 		<div class="row">
- 			<div class="col-md-12">
- 				  <strong>Name:</strong>
-					 <h3> <%= @client.name %> </h3>
-					 
+  <% if user_signed_in? %>
+<div class="new_requestor">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 mx-auto">
+          <div class=" ">
+ 				  
+							<div class="row">
+								<div class="col-md-12">
+								  <%= render "requests/form_request" %>
+										<%= render  @client.requests %>
+									
 
-					<%= render  @client.requests %>
-					<%= render "requests/form_request" %>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+								<h3>Please provide personnel info, thanks</h3>
+								<%= render "personnel_infos/form_personnel_info" %>
+								  <%= render @client.personnel_infos %> 
+									
 
-					<%= render @client.personnel_infos %>
-
-					<%= render "personnel_infos/form_personnel_info" %>
-
+								</div>
+							</div>
+				 
 
 					<%= link_to 'Back', clients_path %>
 
- 			</div>
- 		</div>
- 	</div>
+ 	     </div> 
+    </div>
+  </div>
+</div>
  </div>
- 
+
+  <% end %>

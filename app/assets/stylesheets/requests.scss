@@ -1,3 +1,33 @@
 // Place all the styles related to the requests controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.new_requestor{
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+   text-align: left;
+}
+.flex-style{
+	    display: inline-flex;
+	    line-height: 1.5;
+}
+@media(max-width: 63rem){
+	.flex-style{
+		display: block;
+	}
+}
+.flex-style label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    margin-left: 1rem;
+}
+.underline_style{
+	text-decoration: underline;
+	font-weight: 900;
+
+}
+select {
+    text-transform: none;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
