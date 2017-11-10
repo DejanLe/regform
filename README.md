@@ -50,3 +50,16 @@ rails g scaffold personnel_info last_name:string first_name:string middle_initia
       </ul>
     </div>
   <% end %>
+
+
+    <% if personnel_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(personnel_info.errors.count, "error") %> prohibited this personnel_info from being saved:</h2>
+
+      <ul>
+      <% personnel_info.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>

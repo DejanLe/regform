@@ -1,0 +1,187 @@
+<%= form_for([@client, @client.personnel_infos.build]) do |form| %>
+
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name, id: :personnel_info_last_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name, id: :personnel_info_first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :middle_initial %>
+    <%= form.text_field :middle_initial, id: :personnel_info_middle_initial %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, id: :personnel_info_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :employee_id %>
+    <%= form.number_field :employee_id, id: :personnel_info_employee_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :D_O_B %>
+    <%= form.text_field :D_O_B, id: :personnel_info_D_O_B %>
+  </div>
+
+  <div class="field">
+    <%= form.label :SSN_last_4_digit %>
+    <%= form.number_field :SSN_last_4_digit, id: :personnel_info_SSN_last_4_digit %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sex_male %>
+    <%= form.check_box :sex_male, id: :personnel_info_sex_male %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sex_female %>
+    <%= form.check_box :sex_female, id: :personnel_info_sex_female %>
+  </div>
+
+  <div class="field">
+    <%= form.label :manager_sponsor__home_dept_id %>
+    <%= form.number_field :manager_sponsor__home_dept_id, id: :personnel_info_manager_sponsor__home_dept_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Dept_Name %>
+    <%= form.text_field :Dept_Name, id: :personnel_info_Dept_Name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Job_Code_ %>
+    <%= form.text_field :Job_Code_, id: :personnel_info_Job_Code_ %>
+  </div>
+
+  <div class="field">
+    <%= form.label :HCW1 %>
+    <%= form.check_box :HCW1, id: :personnel_info_HCW1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :HCW2 %>
+    <%= form.check_box :HCW2, id: :personnel_info_HCW2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :HCW3 %>
+    <%= form.check_box :HCW3, id: :personnel_info_HCW3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :IHCW %>
+    <%= form.check_box :IHCW, id: :personnel_info_IHCW %>
+  </div>
+
+  <div class="field">
+    <%= form.label :NHCW %>
+    <%= form.check_box :NHCW, id: :personnel_info_NHCW %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Business %>
+    <%= form.check_box :Business, id: :personnel_info_Business %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Clinical %>
+    <%= form.check_box :Clinical, id: :personnel_info_Clinical %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Education %>
+    <%= form.check_box :Education, id: :personnel_info_Education %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Student %>
+    <%= form.check_box :Student, id: :personnel_info_Student %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Research %>
+    <%= form.check_box :Research, id: :personnel_info_Research %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Clinical_Research %>
+    <%= form.check_box :Clinical_Research, id: :personnel_info_Clinical_Research %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Research_Collaborator_collab_type %>
+    <%= form.check_box :Research_Collaborator_collab_type, id: :personnel_info_Research_Collaborator_collab_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Clinical_Research %>
+    <%= form.check_box :Clinical_Research, id: :personnel_info_Clinical_Research %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Basic_Research %>
+    <%= form.check_box :Basic_Research, id: :personnel_info_Basic_Research %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Full_Time %>
+    <%= form.check_box :Full_Time, id: :personnel_info_Full_Time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Part_Time %>
+    <%= form.check_box :Part_Time, id: :personnel_info_Part_Time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Per_Diem %>
+    <%= form.check_box :Per_Diem, id: :personnel_info_Per_Diem %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Temp_Student_Contract %>
+    <%= form.check_box :Temp_Student_Contract, id: :personnel_info_Temp_Student_Contract %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Empl_begin_date %>
+    <%= form.date_select :Empl_begin_date, id: :personnel_info_Empl_begin_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Empl_end_date %>
+    <%= form.date_select :Empl_end_date, id: :personnel_info_Empl_end_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Work_Location_Building_Floor_Room %>
+    <%= form.text_field :Work_Location_Building_Floor_Room, id: :personnel_info_Work_Location_Building_Floor_Room %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Work_Phone %>
+    <%= form.text_field :Work_Phone, id: :personnel_info_Work_Phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Practice_Address_if_applicable_street_city %>
+    <%= form.text_field :Practice_Address_if_applicable_street_city, id: :personnel_info_Practice_Address_if_applicable_street_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :client_id %>
+    <%= form.text_field :client_id, id: :personnel_info_client_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

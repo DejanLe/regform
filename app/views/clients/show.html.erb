@@ -7,6 +7,9 @@
 <%= render  @client.requests %>
 <%= render "requests/form_request" %>
 
+<%= render @client.personnel_infos %>
 
-<%= link_to 'Edit', edit_client_path(@client) %> |
+<%= render "personnel_infos/form_personnel_info" %>
+
+
 <%= link_to 'Back', clients_path %>
