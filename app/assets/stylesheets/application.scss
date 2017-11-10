@@ -1,0 +1,75 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree . 
+ *= require_self
+ */
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i');
+@import "font-awesome-sprockets";
+@import "font-awesome";
+body{
+	font-family: 'Lora', serif !important;
+	font-size:85%;
+
+}
+.card{
+	padding: 2rem;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 900;
+    transition: all 0.5s;
+}
+.bg-light {
+    background-color: #3c80c3 !important;
+}
+.navbar-light .navbar-brand {
+    color: #fff;
+    transition: all 0.5s;
+}
+.nav-item .fa{
+	margin-left: 0.5rem;
+}
+ .fa-user-md:before {
+    content: "";
+    margin-right: 0.2rem;
+}
+.fa-user:before {
+    content: "";
+    margin-right: 0.2rem;
+}
+.fa-sign-out:before {
+    content: "";
+    margin-right: 0.2rem;
+}
+.fa-sign-in:before {
+    content: "";
+    margin-right: 0.2rem;
+}
+.fa-sign-in:before {
+    content: "";
+    margin-right: 0.2rem;
+}
+.fa-sticky-note-o:before {
+    content: "";
+    margin-right: 0.2rem;
+}
+.fa-trash:before {
+    content: "";
+    margin-right: 0.2rem;
+}
+ .btn{
+margin-bottom: 0.5rem !important; 
+ }
+
+ 

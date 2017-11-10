@@ -24,11 +24,12 @@ class PersonnelInfosController < ApplicationController
   # POST /personnel_infos
   # POST /personnel_infos.json
   def create
-    @personnel_info = PersonnelInfo.new(personnel_info_params)
+    @client = Client.find(params[:client_id])
+    @personnel_info = @client.personnel_infos.create(params[:personnel_info].permit(:last_name, :first_name, :middle_initial, :title, :employee_id, :D_O_B, :SSN_last_4_digit, :sex_male, :sex_female, :manager_sponsor__home_dept_id, :Dept_Name, :Job_Code_, :HCW1, :HCW2, :HCW3, :IHCW, :NHCW, :Business, :Clinical, :Education, :Student, :Research, :Clinical_Research, :Research_Collaborator_collab_type, :Clinical_Research, :Basic_Research, :Full_Time, :Part_Time, :Per_Diem, :Temp_Student_Contract, :Empl_begin_date, :Empl_end_date, :Work_Location_Building_Floor_Room, :Work_Phone, :Practice_Address_if_applicable_street_city, :client_id)) 
 
     respond_to do |format|
       if @personnel_info.save
-        format.html { redirect_to @personnel_info, notice: 'Personnel info was successfully created.' }
+        format.html { redirect_to @client, notice: 'Personnel info was successfully created.' }
         format.json { render :show, status: :created, location: @personnel_info }
       else
         format.html { render :new }

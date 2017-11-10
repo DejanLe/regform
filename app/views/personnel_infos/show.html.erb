@@ -1,5 +1,4 @@
-<p id="notice"><%= notice %></p>
-
+ 
 <p>
   <strong>Last name:</strong>
   <%= @personnel_info.last_name %>
@@ -177,7 +176,7 @@
 
 <p>
   <strong>Client:</strong>
-  <%= @personnel_info.client %>
+  <%= @personnel_info.client.name %>
 </p>
 
 <%= link_to 'Edit', edit_personnel_info_path(@personnel_info) %> |
