@@ -63,3 +63,8 @@ rails g scaffold personnel_info last_name:string first_name:string middle_initia
       </ul>
     </div>
   <% end %>
+
+  ############################################################################################
+  rootes
+
+  

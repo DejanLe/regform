@@ -1,64 +1,69 @@
 <%= form_for([@client, @client.personnel_infos.build]) do |form| %>
 
+<div class=""><!-- start display 3 -->
 
-  <div class="field">
+  <div class="field display-2-inline">
     <%= form.label :last_name %>
-    <%= form.text_field :last_name, id: :personnel_info_last_name %>
+    <%= form.text_field :last_name, id: :personnel_info_last_name , class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field display-2-inline">
     <%= form.label :first_name %>
-    <%= form.text_field :first_name, id: :personnel_info_first_name %>
+    <%= form.text_field :first_name, id: :personnel_info_first_name, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field display-2-inline">
     <%= form.label :middle_initial %>
-    <%= form.text_field :middle_initial, id: :personnel_info_middle_initial %>
-  </div>
-
-  <div class="field">
+    <%= form.text_field :middle_initial, id: :personnel_info_middle_initial, class: "form-control" %>
+  </div> 
+  </div><!-- end display 3 -->
+<div class="display-2-inline "><!-- start display 2 -->
+  <div class="field display-2-inline">
     <%= form.label :title %>
-    <%= form.text_field :title, id: :personnel_info_title %>
+    <%= form.text_field :title, id: :personnel_info_title, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field display-2-inline">
     <%= form.label :employee_id %>
     <%= form.number_field :employee_id, id: :personnel_info_employee_id %>
   </div>
-
+  </div><!-- end display 2 -->
+  <div class="display-4-inline "><!-- start display 4 -->
   <div class="field">
     <%= form.label :D_O_B %>
-    <%= form.text_field :D_O_B, id: :personnel_info_D_O_B %>
+    <%= form.text_field :D_O_B, id: :personnel_info_D_O_B, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field ">
     <%= form.label :SSN_last_4_digit %>
-    <%= form.number_field :SSN_last_4_digit, id: :personnel_info_SSN_last_4_digit %>
+    <%= form.number_field :SSN_last_4_digit, id: :personnel_info_SSN_last_4_digit, class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="field ">
     <%= form.label :sex_male %>
     <%= form.check_box :sex_male, id: :personnel_info_sex_male %>
   </div>
 
-  <div class="field">
+  <div class="field  ">
     <%= form.label :sex_female %>
     <%= form.check_box :sex_female, id: :personnel_info_sex_female %>
   </div>
-
+ </div><!-- end display 4 -->
+ <div class="display-2-inline"><!-- start display 2 -->
   <div class="field">
     <%= form.label :manager_sponsor__home_dept_id %>
-    <%= form.number_field :manager_sponsor__home_dept_id, id: :personnel_info_manager_sponsor__home_dept_id %>
+    <%= form.number_field :manager_sponsor__home_dept_id, id: :personnel_info_manager_sponsor__home_dept_id , class: "form-control"%>
   </div>
 
   <div class="field">
     <%= form.label :Dept_Name %>
-    <%= form.text_field :Dept_Name, id: :personnel_info_Dept_Name %>
+    <%= form.text_field :Dept_Name, id: :personnel_info_Dept_Name, class: "form-control" %>
   </div>
-
+</div><!-- end display 2 -->
+<div class="display-6-inline"><!-- start display 6 -->
   <div class="field">
     <%= form.label :Job_Code_ %>
-    <%= form.text_field :Job_Code_, id: :personnel_info_Job_Code_ %>
+    <%= form.text_field :Job_Code_, id: :personnel_info_Job_Code_, class: "form-control" %>
   </div>
 
   <div class="field">
@@ -85,7 +90,8 @@
     <%= form.label :NHCW %>
     <%= form.check_box :NHCW, id: :personnel_info_NHCW %>
   </div>
-
+</div><!-- end display 6 -->
+<div class="display-6-inline"><!-- start display 6 -->
   <div class="field">
     <%= form.label :Business %>
     <%= form.check_box :Business, id: :personnel_info_Business %>
@@ -115,7 +121,8 @@
     <%= form.label :Clinical_Research %>
     <%= form.check_box :Clinical_Research, id: :personnel_info_Clinical_Research %>
   </div>
-
+</div><!-- end display 6 -->
+<div class="display-3-inline"><!-- start display 3 -->
   <div class="field">
     <%= form.label :Research_Collaborator_collab_type %>
     <%= form.check_box :Research_Collaborator_collab_type, id: :personnel_info_Research_Collaborator_collab_type %>
@@ -130,7 +137,8 @@
     <%= form.label :Basic_Research %>
     <%= form.check_box :Basic_Research, id: :personnel_info_Basic_Research %>
   </div>
-
+</div><!-- end display 3 -->
+<div class="display-6-inline"><!-- start display 6 -->
   <div class="field">
     <%= form.label :Full_Time %>
     <%= form.check_box :Full_Time, id: :personnel_info_Full_Time %>
@@ -160,20 +168,21 @@
     <%= form.label :Empl_end_date %>
     <%= form.date_select :Empl_end_date, id: :personnel_info_Empl_end_date %>
   </div>
-
+</div><!-- end display 6 -->
+<div class="display-2-inline"><!-- start display 2 -->
   <div class="field">
     <%= form.label :Work_Location_Building_Floor_Room %>
-    <%= form.text_field :Work_Location_Building_Floor_Room, id: :personnel_info_Work_Location_Building_Floor_Room %>
+    <%= form.text_field :Work_Location_Building_Floor_Room, id: :personnel_info_Work_Location_Building_Floor_Room, class: "form-control" %>
   </div>
 
   <div class="field">
     <%= form.label :Work_Phone %>
-    <%= form.text_field :Work_Phone, id: :personnel_info_Work_Phone %>
+    <%= form.text_field :Work_Phone, id: :personnel_info_Work_Phone, class: "form-control" %>
   </div>
-
+</div><!-- end display 2 -->
   <div class="field">
     <%= form.label :Practice_Address_if_applicable_street_city %>
-    <%= form.text_field :Practice_Address_if_applicable_street_city, id: :personnel_info_Practice_Address_if_applicable_street_city %>
+    <%= form.text_field :Practice_Address_if_applicable_street_city, id: :personnel_info_Practice_Address_if_applicable_street_city, class: "form-control" %>
   </div>
 
   <div class="field">
@@ -182,6 +191,6 @@
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: "btn btn-primary" %>
   </div>
 <% end %>

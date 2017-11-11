@@ -12,11 +12,14 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :client_name %>
+    
+    <%= form.text_field :name, id: :client_name , class: 'form-control', required: true %>
   </div>
-
+<br>
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: 'btn btn-outline-primary' %>
+  </div>
+   <div class="actions">
+   
   </div>
 <% end %>
