@@ -14,6 +14,7 @@ class PersonnelInfosController < ApplicationController
 
   # GET /personnel_infos/new
   def new
+     @client = Client.find(params[:client_id])
     @personnel_info = PersonnelInfo.new
   end
 

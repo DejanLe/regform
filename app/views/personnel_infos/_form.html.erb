@@ -1,16 +1,4 @@
-<%= form_with(model: personnel_info, local: true) do |form| %>
-  <% if personnel_info.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(personnel_info.errors.count, "error") %> prohibited this personnel_info from being saved:</h2>
-
-      <ul>
-      <% personnel_info.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
+<%= form_for([@client, @client.personnel_infos.build]) do |form| %>
   <div class="field">
     <%= form.label :last_name %>
     <%= form.text_field :last_name, id: :personnel_info_last_name , class: "form-control" %>

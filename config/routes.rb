@@ -16,6 +16,8 @@ end
   	resources :personnel_infos
   	resources :requests
   end
-    
+  
+   #new_client_personnel_info GET    /clients/:client_id/personnel_infos/new(.:format)      personnel_infos#new
+
    
 end

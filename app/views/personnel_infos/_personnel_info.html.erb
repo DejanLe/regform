@@ -1,9 +1,6 @@
- <h4>Personnel info</h4>
-<p>
-<p>
-  <strong>Your website name:</strong>
-   <%=  personnel_info.client.name %>
-</p>
+ <h3>Personnel info</h3>
+  <div class="field display-3-inline">
+<p> 
   <strong>Last name:</strong>
   <%=  personnel_info.last_name %>
 </p>
@@ -12,12 +9,13 @@
   <strong>First name:</strong>
   <%= personnel_info.first_name %>
 </p>
-
 <p>
   <strong>Middle initial:</strong>
   <%=  personnel_info.middle_initial %>
 </p>
-
+</div>
+<br>
+<div class="field display-2-inline">
 <p>
   <strong>Title:</strong>
   <%=  personnel_info.title %>
@@ -27,7 +25,8 @@
   <strong>Employee:</strong>
   <%=  personnel_info.employee_id %>
 </p>
-
+</div>
+<div class="field display-4-inline">
 <p>
   <strong>D o b:</strong>
   <%=  personnel_info.D_O_B %>
@@ -47,7 +46,9 @@
   <strong>Sex female:</strong>
   <%=  personnel_info.sex_female %>
 </p>
-
+</div>
+<br>
+<div class="field display-4-inline">
 <p>
   <strong>Manager sponsor  home dept:</strong>
   <%=  personnel_info.manager_sponsor__home_dept_id %>
@@ -57,12 +58,14 @@
   <strong>Dept name:</strong>
   <%=  personnel_info.Dept_Name %>
 </p>
-
+</div>
+<br>
+<div class="field display-6-inline">
 <p>
   <strong>Job code :</strong>
   <%=  personnel_info.Job_Code_ %>
 </p>
-
+<strong>Healtcate Worker status:</strong>
 <p>
   <strong>Hcw1:</strong>
   <%=  personnel_info.HCW1 %>
@@ -87,9 +90,13 @@
   <strong>Nhcw:</strong>
   <%=  personnel_info.NHCW %>
 </p>
+</div>
 
+<br>
+<div class="field display-6-inline">
+<strong>Job Type:</strong> 
 <p>
-  <strong>Business:</strong>
+  <strong> Business:</strong>
   <%=  personnel_info.Business %>
 </p>
 
@@ -117,7 +124,9 @@
   <strong>Clinical research:</strong>
   <%=  personnel_info.Clinical_Research %>
 </p>
-
+</div>
+<br>
+<div class="field display-6-inline">
 <p>
   <strong>Research collaborator collab type:</strong>
   <%=  personnel_info.Research_Collaborator_collab_type %>
@@ -132,7 +141,9 @@
   <strong>Basic research:</strong>
   <%=  personnel_info.Basic_Research %>
 </p>
-
+</div>
+<br>
+<div class="field display-6-inline">
 <p>
   <strong>Full time:</strong>
   <%=  personnel_info.Full_Time %>
@@ -162,9 +173,11 @@
   <strong>Empl end date:</strong>
   <%=  personnel_info.Empl_end_date %>
 </p>
-
+</div>
+<br>
+<div class="field display-2-inline">
 <p>
-  <strong>Work location building floor room:</strong>
+  <strong>Work location building/floor/room:</strong>
   <%=  personnel_info.Work_Location_Building_Floor_Room %>
 </p>
 
@@ -172,9 +185,10 @@
   <strong>Work phone:</strong>
   <%=  personnel_info.Work_Phone %>
 </p>
-
+</div>
+<br>
 <p>
-  <strong>Practice address if applicable street city:</strong>
+  <strong>Practice address (if applicable street city):</strong>
   <%=  personnel_info.Practice_Address_if_applicable_street_city %>
 </p>
 

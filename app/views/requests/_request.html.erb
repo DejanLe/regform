@@ -1,14 +1,14 @@
   <% if user_signed_in? %>
 <div class="new_requestor">
   
-    
+   
           <div class=" ">
        <table class="table   table-hover table-responsive">
         <thead>
           <tr>
+            <th>Your Name</th>
             <th>Date of request</th>
-            <th>New account</th>
-            <th>Change privileges</th>
+            <th>New account</th> 
             <th>Change privileges</th>
             <th>Disable account</th>
             <th>Re enable account</th>
@@ -18,8 +18,7 @@
             <th>Ap hmfp</th>
             <th>Mc corporate</th>
             <th>Other</th>
-            <th>Specify</th>
-            <th>Client</th>
+            <th>Specify</th> 
             <th colspan="3"></th>
           </tr>
         </thead>
@@ -27,8 +26,7 @@
         <tbody>
               <td><%= request.client.name %></td>
               <td><%= request.date_of_request %></td>
-              <td><%= request.new_account %></td>
-              <td><%= request.change_privileges %></td>
+              <td><%= request.new_account %></td> 
               <td><%= request.change_privileges %></td>
               <td><%= request.disable_account %></td>
               <td><%= request.re_enable_account %></td>
@@ -39,8 +37,8 @@
               <td><%= request.mc_corporate %></td>
               <td><%= request.other %></td>
               <td><%= request.specify %></td>
+               
               
-          
             </tbody>
         </table>
         </div>
