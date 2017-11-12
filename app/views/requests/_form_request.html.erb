@@ -6,11 +6,11 @@
 <div class="flex-style">
    <p><strong> TO BE COMPLETED </strong><em>BY Requestor</em> <br> <em><strong>(Please print clearly and fill out from completely)</strong></em></p>
 
-    <div class="field">
+    <div class="field flex-style text-center ">
     <%= form.label :date_of_request %>
-    <%= form.text_field :date_of_request, id: :request_date_of_request %>
-  </div>
-
+    <%= form.text_field :date_of_request, id: :request_date_of_request, class: "form-control", placeholder: '11/11/2017' %>
+     
+    </div> 
 </div>
 
 
@@ -79,10 +79,10 @@
 
  
 </div>
- 
+ <br>
   <div class="actions">
-    <%= form.submit "SAVE >",  class: "btn btn-primary btn-sm" %>
-     
+    <%= form.submit "SAVE >",  class: "btn btn-outline-primary" %>
+    <%= link_to "NEXT",  new_client_personnel_info_path(@client), class: "btn btn-outline-primary float-right" %>
     
       
   </div>

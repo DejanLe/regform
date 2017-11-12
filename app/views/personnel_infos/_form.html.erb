@@ -1,4 +1,6 @@
+<p>Your login name: <%= @client.name %></p>
 <%= form_for([@client, @client.personnel_infos.build]) do |form| %>
+
   <div class="field">
     <%= form.label :last_name %>
     <%= form.text_field :last_name, id: :personnel_info_last_name , class: "form-control" %>

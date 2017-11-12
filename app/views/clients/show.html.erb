@@ -2,28 +2,13 @@
 <div class="new_requestor">
   <div class="container">
     <div class="row">
-      <div class="col-md-12 mx-auto">
-          <div class=" ">
- 				  
-							<div class="row">
-								<div class="col-md-12">
-							
-									<%= render  @client.requests %>
-								  <%= render "requests/form_request" %>
-									 
-								 </div>	
-							  </div> 
-							 <div class="row">
-                <div class="col-md-12">
-             	   <h3>Please provide personnel info, thanks</h3>
-                <%= render "personnel_infos/form_personnel_info" %>
-                  <%= render @client.personnel_infos %>  
-                </div>
-              </div>
-								</div>
-							</div>
-							<hr> 
-
+      <div class="col-md-12 mx-auto">  
+				 	<%= render  @client.requests %>
+				  <%= render "requests/form_request" %> 
+				 
+	    	</div>
+			  <hr>  
+         <%= render @client.personnel_infos %> 
  	     </div> 
     </div>
   </div>
